@@ -66,7 +66,7 @@ class TimerManager: ObservableObject {
 }
 
 struct ContentView: View {
-    @StateObject private var timerManager = TimerManager(initialSeconds: 69) // 1分に設定
+    @StateObject private var timerManager = TimerManager(initialSeconds: 60) // 1分に設定
     @State private var selectedDuration: Int = 60 // 1分をデフォルトに設定
     
     let durations = [60, 120, 180, 300, 600, 1800, 3600] // 1分, 2分, 3分, 5分, 10分, 30分, 1時間
